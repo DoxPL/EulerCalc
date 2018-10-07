@@ -1,6 +1,7 @@
 /*Program do wyznaczania fukcji Eulera
 Autor: Dominik Galoch */
 #include <iostream>
+#include <math.h>
 using namespace std;
 int check(int n);
 float getPhi(int n);
@@ -32,7 +33,7 @@ int check(int n)
 float getPhi(int n)
 {
 	float phi = n; 
-	for(int i=2; i<n; i++)
+	for(int i=2; i<sqrt(n); i++)
 	{
 		if(!check(i) && (n%i==0))
 		{
